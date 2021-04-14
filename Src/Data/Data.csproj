@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7830FDA6-91D2-4C4E-924C-FB5D47D6591E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\ClearColumnCommand.cs" />
+    <Compile Include="Commands\ClearObjectCommand.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\InsertColumnCommand.cs" />
+    <Compile Include="Commands\RemoveColumnCommand.cs" />
+    <Compile Include="Commands\RenameElementCommand.cs" />
+    <Compile Include="Commands\SetObjectCommand.cs" />
+    <Compile Include="DataObject\DashboardData.cs" />
+    <Compile Include="DataObject\GlobalData.cs" />
+    <Compile Include="DataObject\SequenceData.cs" />
+    <Compile Include="DataObject\Sequence\ObjectCollection.cs" />
+    <Compile Include="DataObject\Sequence\ObjectStream.cs" />
+    <Compile Include="DataObject\Sequence\Objects\ACQ_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\AT_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\Delay_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\ET_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\GA_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\GR_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\LD_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\Loop_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\Name_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\O1_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\PH_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\PS_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\RM_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\SH_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\Objects\TX_ObjectSequence.cs" />
+    <Compile Include="DataObject\Sequence\sStreamData.cs" />
+    <Compile Include="DataObject\Sequence\StreamSequence.cs" />
+    <Compile Include="DataObject\Sequence\TableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\AcquisitionObject.cs" />
+    <Compile Include="DataObject\Sequence\Tables\AcquisitionTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\AsynchronusObject.cs" />
+    <Compile Include="DataObject\Sequence\Tables\AttenuationTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\DataTables\DataTable.cs" />
+    <Compile Include="DataObject\Sequence\Tables\DataTables\DelayAutoTable.cs" />
+    <Compile Include="DataObject\Sequence\Tables\DataTables\GenerateAutoTable.cs" />
+    <Compile Include="DataObject\Sequence\Tables\DelayTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\FrequencyTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\GradientAmplitudeTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\GradientWaveformTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\LoopTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\ModulationTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\PhaseTableSequence.cs" />
+    <Compile Include="DataObject\Sequence\Tables\RotationAngleTableSequence.cs" />
+    <Compile Include="DataObject\SignalData.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="FileBuilders\ConfigDashboardFileBuilder.cs" />
+    <Compile Include="FileBuilders\DashboardFileBuilder.cs" />
+    <Compile Include="FileBuilders\GlobalVariableFileBuilder.cs" />
+    <Compile Include="FileBuilders\MRIFileBuilder.cs" />
+    <Compile Include="FileBuilders\SequenceFileBuilder.cs" />
+    <Compile Include="FileBuilders\SignalFileBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculations\Calculations.csproj">
+      <Project>{339029A3-C071-4E5F-88EC-C8B0BEC41FEA}</Project>
+      <Name>Calculations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Localize\Localize.csproj">
+      <Project>{AD978D05-F938-4C16-B020-5E315E1DC4FE}</Project>
+      <Name>Localize</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{F74A2E73-36CC-403A-8E32-148FFE679FE5}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

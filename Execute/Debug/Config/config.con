@@ -1,0 +1,74 @@
+;file name = config.con
+;
+;   Definition of LP lines for Apollo HF system (2 channel + gradients)
+;   Consistent with G2 and multi-receiver systems
+;   CDG 7/28/99, 8/10/99
+;   DBF 11/9/99 - renamed lines for consistency
+;   DBF 11/17/99 - added 3rd channel RF
+;   DBF 1/18/00 - blanking lines moved to accomodate LP adapter           
+;   CDG 2/26/01 - Add column 11 for asynchronous sequence groups
+;
+;  ***LF configuration file for S/N 37679 Aspect #9.***       
+;    -- File Format --
+; 
+; <1> = Name
+; <2> = Module Prefix
+; <3> = Start Address
+; <4> = Number of Bits
+; <5> = Minimum delay
+; <6> = Maximum Delay
+; <7> = delay Unit
+; <8> = Icon type
+; <9> = Visible
+; <10> = Private Data 
+; <11> = Group Number
+;
+; Any text after ";" on each line is ignored.
+; Fields are delimited by either spaces or tabs.
+;
+; <1>    	  <2> <3><4><5><6><7> <8><9><10><11>
+F1_Ampl   	  EA1 15 12  1  0  0  R2  1  0   0  ; F1 amplitude modulation	
+F1_PhMod	  EP1 11 12  1  0  0  P2  1  0   1  ; F1 phase patterns	
+F1_Ph   	  BP2 05  2  1  0  0  PH  1  0   0  ; F1 phase cycle (90/180)
+F1_Atten	  EA1 23  8  1  0  0  A2  1  5   0  ; F1 atten - note private data!
+F1_H/L   	  EA1 23  1  1  0  0  TX  1  0   0  ; F1 user attenuator
+F1_Freq		  DD1 23 24  0  0  0  O1  1  0   0  ; F1 frequency control
+F1_TxGate	  EA1 31  1  0  0  0  TX  1  0   0  ; F1 transmitter gate
+F1_PhRst  	  BP2 00  1  0  0  0  TX  1  0   0  ; F1 phase reset
+F1_UnBlank	  BP2 13  1  0  0  0  TX  1  0   0  ; F1 amplifier unblanking
+
+Acq		  AQ1 23 24  0  0  0  ACQ 1  0   0  ; Acquistion ch 1
+Acq_2	 	  AQ2 23 24  0  0  0  ACQ 1  0   0  ; Acquistion ch 2
+Acq_3		  AQ3 23 24  0  0  0  ACQ 1  0   0  ; Acquistion ch 3
+Acq_4		  AQ4 23 24  0  0  0  ACQ 1  0   0  ; Acquistion ch 4
+Acq_phase	  AQ1  3  2  0  0  0  PH  1  0   0  ; Acquisition phase ch 1
+Acq_phase_2  	  AQ2  3  2  0  0  0  PH  1  0   0  ; Acquisition phase ch 2
+Acq_phase_3  	  AQ3  3  2  0  0  0  PH  1  0   0  ; Acquisition phase ch 3
+Acq_phase_4  	  AQ4  3  2  0  0  0  PH  1  0   0  ; Acquisition phase ch 4
+
+ 
+RX_Blank	  BP3 23  1  1  0  0  TX  1  0   0  ; RX blank ch 1
+RX_Blank_2	  BP3 24  1  1  0  0  TX  1  0   0  ; RX blank ch 2
+RX_Blank_3	  BP3 25  1  1  0  0  TX  1  0   0  ; RX blank ch 3
+RX_Blank_4	  BP3 26  1  1  0  0  TX  1  0   0  ; RX blank ch 4
+RX_Freq	  	  DDA 23 24  0  0  0  O1  1  0   0  ; Receiver LO 1 frequency control
+RX_PhRst 	  BP2 01  1  0  0  0  TX  1  0   0  ; Receiver LO 1 phase reset
+RX_PhRst_2 	  BP2 02  1  0  0  0  TX  1  0   0  ; Receiver LO 2 phase reset
+RX_PhRst_3 	  BP2 07  1  0  0  0  TX  1  0   0  ; Receiver LO 3 phase reset
+RX_PhRst_4 	  BP2 11  1  0  0  0  TX  1  0   0  ; Receiver LO 4 phase reset
+RX_Phase	  EPA 11 12  1  0  0  P2  1  0   0  ; Rx fine phase
+F0_PhRst	  BP1 00  1  0  0  0  TX  1  0   0  ; Receiver LO 0 phase reset
+
+Gr_Shape	  EG1 31 16  0  0  0  SH  1  0   0  ; Read gradient shape
+Gr_Amp	  	  EG1 15 16  0  0  0  G2  1  0   0  ; Read gradient amplitude
+Gp_Shape	  EG2 31 16  0  0  0  SH  1  0   0  ; Phase gradient shape
+Gp_Amp	  	  EG2 15 16  0  0  0  G2  1  0   0  ; Phase gradient amplitude
+Gs_Shape	  EG3 31 16  0  0  0  SH  1  0   0  ; Slice gradient shape
+Gs_Amp	  	  EG3 15 16  0  0  0  G2  1  0   0  ; Slice gradient amplitude
+Grad_Angle	  GMR 23 24  0  0  0  GA  1  3   0  ; Gradient rotation
+
+Spare		  BP3 13  1  0  0  0  TX  1  0   0  ; spare gate signal
+Ext_Trig	  EM1 31  1  0  0  0  TX  1  0   0  ; External trigger (dummy LP line)
+Scope_Trig	  BP1 19  1  0  0  0  TX  1  0   0  ; Scope trigger for diagnostics
+
+

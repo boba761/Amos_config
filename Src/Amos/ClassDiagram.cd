@@ -1,0 +1,1295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Amos.Calculations.CompiledException" Collapsed="true">
+    <Position X="42.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\CompiledException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Calculations.ProcessorException" Collapsed="true">
+    <Position X="40.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\CompiledException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Calculations.CompiledItem" Collapsed="true">
+    <Position X="16" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAAAAAAAAAAAAAAQAAAACAAAIAA=</HashCode>
+      <FileName>Calculations\CompiledItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Kind" />
+      <Property Name="Expression" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Operators" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Compiler" Collapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>DLsJAgIACCeAIAAAABBAAQAAGAGIAAIAABgAAgBICEA=</HashCode>
+      <FileName>Calculations\Compiler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_operatorsDictionary" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.OperatorItem" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Calculations\Operator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Kind" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Operator" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAABABABAAAAECAAAAAQAAAIAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Operator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Kind" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_operatorItemList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.BinaryExpresssion" Collapsed="true">
+    <Position X="9.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAgAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Calculations\Expressions\BinaryExpresssion.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Expression1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.Expression" Collapsed="true">
+    <Position X="28.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Expressions\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.FunctionExpression" Collapsed="true">
+    <Position X="4.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Calculations\Expressions\FunctionExpression.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Expressions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.TrenaryExpression" Collapsed="true">
+    <Position X="4.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAgAAAAAAgEAAAAQAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Calculations\Expressions\TrenaryExpression.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Expression1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.UnaryExpression" Collapsed="true">
+    <Position X="4.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAEAAAAQAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Expressions\UnaryExpression.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Expression" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.ValueExpression" Collapsed="true">
+    <Position X="32" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Expressions\ValueExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Calculations.Expressions.VariableExpression" Collapsed="true">
+    <Position X="9.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Calculations\Expressions\VariableExpression.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ValueExpression" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Calculations.Visitors.ExpressionVisitor" Collapsed="true">
+    <Position X="5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQCAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Visitors\ExpressionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Calculations.Visitors.Visitor" Collapsed="true">
+    <Position X="5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Visitors\Visitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.ClearColumnCommand" Collapsed="true">
+    <Position X="16" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ClearColumnCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.ClearObjectCommand" Collapsed="true">
+    <Position X="18.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ClearObjectCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.Command" Collapsed="true">
+    <Position X="21.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQAAAAAAAAAAAAAAAASAAAAABAAAAA=</HashCode>
+      <FileName>Commands\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Amos.Commands.InsertColumnCommand" Collapsed="true">
+    <Position X="20.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\InsertColumnCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.MoveRowCommand" Collapsed="true">
+    <Position X="22.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAgAIAAAQAAAAACAAAAA=</HashCode>
+      <FileName>Commands\MoveRowCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.Receiver" Collapsed="true">
+    <Position X="14" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAAAAAIAAABAAAAAAAEAgBAAAAAAAAAAAAABAAAAI=</HashCode>
+      <FileName>Commands\Receiver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_commands" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Commands.RemoveColumnCommand" Collapsed="true">
+    <Position X="25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAASAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RemoveColumnCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.RenameElementCommand" Collapsed="true">
+    <Position X="27.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAAAAQAAAAAAAAAAAABAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RenameElementCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.ResizeColumnCommand" Collapsed="true">
+    <Position X="29.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIQAAAAAAgAAAAAAAAAQAIAAAAEAAAA=</HashCode>
+      <FileName>Commands\ResizeColumnCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Commands.SetObjectCommand" Collapsed="true">
+    <Position X="13.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\SetObjectCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Controls.DelayTableControl" Collapsed="true">
+    <Position X="21.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAJBIAAACAABACACoAIAAAgKAAAAQAAIA=</HashCode>
+      <FileName>Controls\DelayTableControl.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_delayAuto" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.GradientAmplitudeControl" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAjIAAACAABACAAAAIAAEACAAAAAAACA=</HashCode>
+      <FileName>Controls\GradientAmplitudeControl.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_tableData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.VariableTypeEditor" Collapsed="true">
+    <Position X="44.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAABAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\VariableTypeEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.Cell" Collapsed="true">
+    <Position X="5.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAoAAAgggCAhAgAgAAAAIAgACAAiACAEAAAA=</HashCode>
+      <FileName>Controls\Sequence\Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Row" />
+      <Property Name="Column" />
+      <Property Name="Object" />
+      <Property Name="Stream" />
+      <Property Name="TypeCollection" />
+      <Property Name="ObjectCollection" />
+      <Property Name="StateGlyph" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.Column" Collapsed="true">
+    <Position X="7.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAAEAAAgAAAEARhEEAABAAABCKgAGEGCBAAAQ=</HashCode>
+      <FileName>Controls\Sequence\Column.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="StateGlyph" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.Glyph" Collapsed="true">
+    <Position X="7.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAggAAAAAQAgAAAAAAAACAACACAAAAAA=</HashCode>
+      <FileName>Controls\Sequence\Glyph.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Parent" />
+      <Property Name="StateGlyph" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.Header" Collapsed="true">
+    <Position X="12.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAACAAAAAgwAAAAACAAAACAAAAIgAAQAAAAIIAAA=</HashCode>
+      <FileName>Controls\Sequence\Header.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_control" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.Row" Collapsed="true">
+    <Position X="9.75" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAAAAAkoECCAoAggAgACAAAAACAAgACAAAAAA=</HashCode>
+      <FileName>Controls\Sequence\Row.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="StateGlyph" />
+      <Property Name="Element" />
+      <Property Name="ObjectCollection" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Cells" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.SequenceControl" Collapsed="true">
+    <Position X="12.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkABCAgCxAgVQMYUKWgIUCxAAACwKDkACgQQ1AEGQ=</HashCode>
+      <FileName>Controls\Sequence\SequenceControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Controls.Sequence.SequencePanel" Collapsed="true">
+    <Position X="15.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EYLSwASQVjVpawGS1AEwgGDACJ4IEcPFIlAwQQIKoiA=</HashCode>
+      <FileName>Controls\Sequence\SequencePanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_control" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Signal.LargeSignalPanel" Collapsed="true">
+    <Position X="19" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IUSCohEAioDgAggQ5QgAAAAAAACACAAAhAQAAAAAMgA=</HashCode>
+      <FileName>Controls\Signal\LargeSignalPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SignalPaint" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Controls.Signal.SignalControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="11.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Amos.Controls.Signal.SignalControl.OnChangeZoom" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controls\Signal\SignalControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CGAAAACLADjgEBmgFAKQECgGAAIARICAhKDAEQAAAgA=</HashCode>
+      <FileName>Controls\Signal\SignalControl.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_signalData" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Controls.Signal.SmallSignalPanel" Collapsed="true">
+    <Position X="16" Y="24.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUSCAAAAggBAAgAAxAAAAAAAAACAAAAAAAAAAAAAIwA=</HashCode>
+      <FileName>Controls\Signal\SmallSignalPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SignalPaint" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Data.DashboardData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAShAECAFAAKAoKAAgAIwAgRCEIUAAQkREAgKACEA=</HashCode>
+      <FileName>Data\DashboardData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Compiler" />
+      <Property Name="CurrentCollectionVariable" />
+      <Property Name="GlobalCollectionVariable" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Variables" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.GlobalData" Collapsed="true">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAEAAAAAEAEAAQAAgCAAAA=</HashCode>
+      <FileName>Data\GlobalData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_variables" />
+      <Property Name="Variables" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Data.SequenceData">
+    <Position X="7.75" Y="11.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>FMAJEAQBIABEBuAAAgAAQUCQAAABAEAAAEACBAqRESQ=</HashCode>
+      <FileName>Data\SequenceData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SequenceCollectionVariable" />
+      <Property Name="TableCollectionVariable" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="SequenceVariables" />
+      <Property Name="TableVariables" />
+      <Property Name="Tables" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.Data.SignalData">
+    <Position X="17" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAANIABAAAEAAQAAAAAAAAAAQEAABAAAAACgAAA=</HashCode>
+      <FileName>Data\SignalData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.StreamSequence" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="10.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAGECAAIyAcoBACIAAAASIAGAYACAACACAWQgAAAA=</HashCode>
+      <FileName>Data\Sequence\StreamSequence.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_elementData" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ObjectCollection" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.ObjectCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEAAAAYAAEIAACCAABACAAAAIAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\ObjectCollection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TypeCollection" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Objects" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.ObjectSequence" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAJggAAICAAAQgEAEI4AgBAAYJgFBCAS4gCSCIBJE=</HashCode>
+      <FileName>Data\Sequence\ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+      <Property Name="Value" />
+      <Property Name="Variable" />
+      <Property Name="Table" />
+      <Property Name="Acquisition" />
+      <Property Name="Asynchronus" />
+      <Property Name="Parent" />
+      <Property Name="Next" />
+      <Property Name="TypeCollection" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.TableSequence" Collapsed="true">
+    <Position X="16" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoCBLQAQCCgAGAEAADAAAwAAAAAABAKAAQAiAQAQJA=</HashCode>
+      <FileName>Data\Sequence\TableSequence.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+      <Property Name="DelayAuto" />
+      <Property Name="GenerateAuto" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_valueList" />
+      <Property Name="Variables" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.ACQ_ObjectSequence" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgEAAAoAAAAAIJABAAACAgAAAIBJA=</HashCode>
+      <FileName>Data\Sequence\Objects\ACQ_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.AT_ObjectSequence" Collapsed="true">
+    <Position X="13.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAIAJA=</HashCode>
+      <FileName>Data\Sequence\Objects\AT_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.Delay_ObjectSequence" Collapsed="true">
+    <Position X="17.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAIAAAAAAAABAAAAAgAAAIABA=</HashCode>
+      <FileName>Data\Sequence\Objects\Delay_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.ET_ObjectSequence" Collapsed="true">
+    <Position X="20" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAYIABAAAAggAAAAAJE=</HashCode>
+      <FileName>Data\Sequence\Objects\ET_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.GA_ObjectSequence" Collapsed="true">
+    <Position X="22.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAIAAAAAAIABAAAAAAAAAIABA=</HashCode>
+      <FileName>Data\Sequence\Objects\GA_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.GR_ObjectSequence" Collapsed="true">
+    <Position X="24.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAAABA=</HashCode>
+      <FileName>Data\Sequence\Objects\GR_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.LD_ObjectSequence" Collapsed="true">
+    <Position X="26.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAAABA=</HashCode>
+      <FileName>Data\Sequence\Objects\LD_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.Loop_ObjectSequence" Collapsed="true">
+    <Position X="29" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAIAJA=</HashCode>
+      <FileName>Data\Sequence\Objects\Loop_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.Name_ObjectSequence" Collapsed="true">
+    <Position X="31.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAYAAAAAAAggAAAIAJE=</HashCode>
+      <FileName>Data\Sequence\Objects\Name_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.O1_ObjectSequence" Collapsed="true">
+    <Position X="33.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAIAAAAAAAABAAAAAgAAAIABA=</HashCode>
+      <FileName>Data\Sequence\Objects\O1_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.PH_ObjectSequence" Collapsed="true">
+    <Position X="35.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgEAAIoAAAAAABABAAAAAgACAIBJA=</HashCode>
+      <FileName>Data\Sequence\Objects\PH_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.PS_ObjectSequence" Collapsed="true">
+    <Position X="38" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAIABA=</HashCode>
+      <FileName>Data\Sequence\Objects\PS_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.RM_ObjectSequence" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAIAJA=</HashCode>
+      <FileName>Data\Sequence\Objects\RM_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.SH_ObjectSequence" Collapsed="true">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAA4AAAAAQIABAAAAggAAAIAJE=</HashCode>
+      <FileName>Data\Sequence\Objects\SH_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Objects.TX_ObjectSequence" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAoAAAAAAAABAAAAAgAAAIABA=</HashCode>
+      <FileName>Data\Sequence\Objects\TX_ObjectSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.AcquisitionObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAgACAAACAAAAAAAQAwAAhRAAAAABAAACgAAARA=</HashCode>
+      <FileName>Data\Sequence\Tables\AcquisitionObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.AcquisitionTableSequence" Collapsed="true">
+    <Position X="10.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\AcquisitionTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.AsynchronusObject" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAABA=</HashCode>
+      <FileName>Data\Sequence\Tables\AsynchronusObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.AttenuationTableSequence" Collapsed="true">
+    <Position X="12.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\AttenuationTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.DelayTableSequence" Collapsed="true">
+    <Position X="15" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAACAMAACAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\DelayTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.FrequencyTableSequence" Collapsed="true">
+    <Position X="17.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAgACAEAACAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\FrequencyTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.GradientAmplitudeTableSequence" Collapsed="true">
+    <Position X="19.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAgACAEAACAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\GradientAmplitudeTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.GradientWaveformTableSequence" Collapsed="true">
+    <Position X="21.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\GradientWaveformTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.LoopTableSequence" Collapsed="true">
+    <Position X="24" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\LoopTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.ModulationTableSequence" Collapsed="true">
+    <Position X="26.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\ModulationTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.PhaseTableSequence" Collapsed="true">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAgACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\PhaseTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.RotationAngleTableSequence" Collapsed="true">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgACAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Sequence\Tables\RotationAngleTableSequence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.DataTables.DataTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBIQAAAAAAAAAAAAAAAAgAAAAAAAACAAAAACAAABA=</HashCode>
+      <FileName>Data\Sequence\Tables\DataTables\DataTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.DataTables.DelayAutoTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAAAAAAgAAIAAAQAAAAAABAAAAEAAAAACAABI=</HashCode>
+      <FileName>Data\Sequence\Tables\DataTables\DelayAutoTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IncrementVariable" />
+      <Property Name="Table" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Amos.Data.Sequence.Tables.DataTables.GenerateAutoTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAQCAAggAAIEAAQAAEAAAAAAAAAAAAAEBAABI=</HashCode>
+      <FileName>Data\Sequence\Tables\DataTables\GenerateAutoTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Table" />
+      <Property Name="IncrementVariable" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Calculations.Values.AttenuationValue" Collapsed="true">
+    <Position X="29.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\AttenuationValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.BooleanValue" Collapsed="true">
+    <Position X="20.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAQAQEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\BooleanValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.CornerValue" Collapsed="true">
+    <Position X="31.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\CornerValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.DateTimeValue" Collapsed="true">
+    <Position X="22.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAAAQEAAAAAAAAAAAAABAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\DateTimeValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.DoubleValue" Collapsed="true">
+    <Position X="29.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAQAQEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\DoubleValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.FrequencyValue" Collapsed="true">
+    <Position X="33.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAABAAAAABEAAAgAAAQAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\FrequencyValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.IntegerValue" Collapsed="true">
+    <Position X="36" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAQAQEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\IntegerValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.StringValue" Collapsed="true">
+    <Position X="38.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAAAQEAAAAAAAAAAAAABAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\StringValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.TemperaturaValue" Collapsed="true">
+    <Position X="24.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAARAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\TemperaturaValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.TimeSpanValue" Collapsed="true">
+    <Position X="18" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAABAAAAAQEAAAAAAAAAAAAABAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\TimeSpanValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.TimeValue" Collapsed="true">
+    <Position X="27" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAABAAAAABEAAAgAAAQAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Values\TimeValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Values.Value" Collapsed="true">
+    <Position X="28" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBAACBQRBBiSFAACgIggAACAAAFAQhAAAhAAAIFA=</HashCode>
+      <FileName>Data\Values\Value.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Calculations.Variables.CollectionVariable" Collapsed="true">
+    <Position X="5.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICCAAACAAAAAAoAAAABAAgABAEIAAABERAEABgCBA=</HashCode>
+      <FileName>Data\Variables\CollectionVariable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EnumerableVariables" />
+      <Property Name="ValueExpression" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="VariableChilds" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Calculations.Variables.GlobalVariable" Collapsed="true">
+    <Position X="7.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Variables\GlobalVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Variables.LocalVariable" Collapsed="true">
+    <Position X="9.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Variables\LocalVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Variables.ObjectVariable" Collapsed="true">
+    <Position X="11" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABQAAwAEEAAAAAgAQCAAAFAAIAAgAAAgAkA=</HashCode>
+      <FileName>Data\Variables\ObjectVariable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Value" />
+      <Property Name="ValueExpression" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Calculations.Variables.SequenceVariable" Collapsed="true">
+    <Position X="12" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Variables\SequenceVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Variables.SystemVariable" Collapsed="true">
+    <Position X="14.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Variables\SystemVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Variables.TableVariable" Collapsed="true">
+    <Position X="12" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Variables\TableVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Variables.Variable" Collapsed="true">
+    <Position X="9.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Data\Variables\Variable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Calculations.Variables.VariableConvertor" Collapsed="true">
+    <Position X="1.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Variables\VariableConvertor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Calculations.Variables.VariablePropertyDescriptor" Collapsed="true">
+    <Position X="2.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAAAZAAwAkAQQAAAAAAAAAAAAAQAAAQCAAAACAA=</HashCode>
+      <FileName>Data\Variables\VariablePropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_property" />
+      <Field Name="_collection" />
+      <Field Name="_variableConvertor" />
+      <Property Name="Converter" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Document" Collapsed="true">
+    <Position X="14" Y="9.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Amos.Document.OnChangeData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Document.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQQADIAAACBAMAQAEAAAAAAAAgIAAEAAAAgAAAHBAAA=</HashCode>
+      <FileName>Document.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Global" />
+      <Property Name="Dashboard" />
+      <Property Name="Sequence" />
+      <Property Name="Signal" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Amos.MainForm" Collapsed="true">
+    <Position X="5.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RpAYjS0AQuKkAIqGZHWBgiBKAijoOEBChAAYQAQmUgA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+      <Property Name="DashboardView" />
+      <Property Name="SequenceView" />
+      <Property Name="SignalView" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.Program" Collapsed="true">
+    <Position X="6.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAQIEAAgAAGAIAAAAAAAAAAAEIACAACCAgABAwAAEA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainForm" />
+      <Property Name="Document" />
+      <Property Name="RecentFileList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.RecentFileList" Collapsed="true">
+    <Position X="1.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAgAAAAAAACAAAAAAAAARAAAAQAAAAQAAAAAAAAAQ=</HashCode>
+      <FileName>RecentFileList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Forms.AcquisitionPropertieForm" Collapsed="true">
+    <Position X="12" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAApAAIAACQIAAAACICAEIYiAEAhEAAAAAAAAAAAQBg=</HashCode>
+      <FileName>Forms\AcquisitionPropertieForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Forms.BaseForm" Collapsed="true">
+    <Position X="9.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAACAAAAAQACAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\BaseForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Forms.DashboardCustomizeForm" Collapsed="true">
+    <Position X="14.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBiGoAIRCKQBBHRAwICgUAJiACAoFABAgAIhWQQQCAE=</HashCode>
+      <FileName>Forms\DashboardCustomizeForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Forms.TableEditForm" Collapsed="true">
+    <Position X="7.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAAAAIICUQQpQAEECBQgQCEAAEECAAAAAAACRABhA=</HashCode>
+      <FileName>Forms\TableEditForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Forms.VariableEditorForm" Collapsed="true">
+    <Position X="9.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASKWkAAgADQIAgKFQACUVEgSYDYIEQAQAAQCUggBAEY=</HashCode>
+      <FileName>Forms\VariableEditorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Properties.Resources" Collapsed="true">
+    <Position X="42.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAIAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilder" Collapsed="true">
+    <Position X="25.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileConverter" Collapsed="true">
+    <Position X="22.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileConverter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_fileBuilder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.ConfigDashboardFileBuilder" Collapsed="true">
+    <Position X="22.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\ConfigDashboardFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.DashboardFileBuilder" Collapsed="true">
+    <Position X="24.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\DashboardFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.GlobalVariableFileBuilder" Collapsed="true">
+    <Position X="26.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\GlobalVariableFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.MRIFileBuilder" Collapsed="true">
+    <Position X="29" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\MRIFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.ParametersFileBuilder" Collapsed="true">
+    <Position X="31.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\ParametersFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.SequenceFileBuilder" Collapsed="true">
+    <Position X="33.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\SequenceFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.SignalFileBuilder" Collapsed="true">
+    <Position X="17.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\SignalFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.TNTFileBuilder" Collapsed="true">
+    <Position X="20" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\TNTFileBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.BinaryReaderEx" Collapsed="true">
+    <Position X="40.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAwAAAAAAAAAAAAQAAEAgAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\BinaryReaderEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.GridAndAxis" Collapsed="true">
+    <Position X="44.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAgAQAIABAAAQAAAQACAABAAQQAAABAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\GridAndAxis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.PulseSequence" Collapsed="true">
+    <Position X="9" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABQAABAACAAAAAAAAAACEAAAIAAAEA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\PulseSequence.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sequenceParameterPages" />
+      <Field Name="sequenceParameters" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="sequenceRows" />
+      <Field Name="sequenceTables" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.SequenceAcquation" Collapsed="true">
+    <Position X="44.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABAAAAAAAAAAAACAAAEAAAAAAACAAAAAAAAAAAAAg=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\SequenceAcquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.SequenceEvent" Collapsed="true">
+    <Position X="12" Y="27" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAgQAAAAIAICAAAAAAEACeAQAACAAEAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\SequenceEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.SequenceParameterPages" Collapsed="true">
+    <Position X="12" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\SequenceParameterPages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.SequenceParameters" Collapsed="true">
+    <Position X="9" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\SequenceParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.SequenceRow" Collapsed="true">
+    <Position X="12" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAASAAABAAIAAAAAAAAAIAAAAACAAACAAAAAg=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\SequenceRow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sequenceEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.SequenceTable" Collapsed="true">
+    <Position X="6" Y="24" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQQggAAAAACBAACQkCAAAAAAQgAAAkAE=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\SequenceTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.TECMAG" Collapsed="true">
+    <Position X="40.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAAAKAAIAEAAAABCAAAEQAAAQABEAAgQAAAABAAAg=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\TECMAG.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.TypeFiles.FileBuilders.FileTNT.TECMAG2" Collapsed="true">
+    <Position X="42.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IALNhoFwCBD0cRACBKJsEQVA4OFowIlShKABwJQjSAw=</HashCode>
+      <FileName>TypeFiles\FileBuilders\FileTNT\TECMAG2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Views.BaseView" Collapsed="true">
+    <Position X="19.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAQAAAAAAAAAACAAAEAAACAAAAAAAABAA=</HashCode>
+      <FileName>Views\BaseView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Views.DashboardView" Collapsed="true">
+    <Position X="17.25" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABA0ACCBAAAAQQkiAAAACCAAEABACQAAAAAAAAEw=</HashCode>
+      <FileName>Views\DashboardView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Views.SequenceView" Collapsed="true">
+    <Position X="19.5" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgGCAL0ASD1QYoYFUGiBAEBCAAIEAAQCRBAAAAADIAQ=</HashCode>
+      <FileName>Views\SequenceView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Amos.Views.SignalView" Collapsed="true">
+    <Position X="21.75" Y="20" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wDABAAEAACIgAAEAAgCAABCCAAAAAQACRABAAQAAaAQ=</HashCode>
+      <FileName>Views\SignalView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.ComponentModel.TypeConverter" Collapsed="true">
+    <Position X="2.75" Y="18" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="Amos.Interfaces.sStreamData" Collapsed="true">
+    <Position X="1.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAGBAQAIBBAAkAAIAAgQQACAUAAAKAAAkCAAAIgA=</HashCode>
+      <FileName>Interfaces\sStreamData.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Amos.Interfaces.ICommand" Collapsed="true">
+    <Position X="14" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Amos.Interfaces.ICommandList" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICommandList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Document" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="Amos.Interfaces.IStream" Collapsed="true">
+    <Position X="16.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAMoAACAAAAAQAACAIACAAAACACAAAAAA=</HashCode>
+      <FileName>Interfaces\IStream.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Amos.Interfaces.IObjectStream" Collapsed="true">
+    <Position X="14.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIgAAAIAAAAAgEAAIwAgAAAYJgFACASwgCCAIAIE=</HashCode>
+      <FileName>Interfaces\IObjectStream.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Amos.Interfaces.IObjectCollection" Collapsed="true">
+    <Position X="7.5" Y="21.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAEAAACCAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IObjectCollection.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Amos.Interfaces.IObjectData" Collapsed="true">
+    <Position X="40.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IObjectData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Amos.Interfaces.ISignalPaint" Collapsed="true">
+    <Position X="16" Y="22.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAABgAEBggEAAQECgAAAAAAAAAAACAAAAAAgA=</HashCode>
+      <FileName>Interfaces\ISignalPaint.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Amos.Interfaces.IDataValue" Collapsed="true">
+    <Position X="42.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDataValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="System.Collections.Generic.IEnumerable&lt;T&gt;" Collapsed="true">
+    <Position X="7.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Amos.Calculations.eCompiledItemKind" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAE=</HashCode>
+      <FileName>Calculations\CompiledItem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Amos.Calculations.eOperatorKind" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAIAA=</HashCode>
+      <FileName>Calculations\Operator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Amos.Controls.Sequence.eStateGlyph" Collapsed="true">
+    <Position X="7.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAQAAAAAQ=</HashCode>
+      <FileName>Controls\Sequence\Glyph.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Amos.Interfaces.eTypeObjectStream" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAAAAAAAAAAAAAaAAAAAABAACBAAQgAAAAAAA=</HashCode>
+      <FileName>Interfaces\IObjectStream.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Amos.Interfaces.eTypeObjectCollection" Collapsed="true">
+    <Position X="19.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAIAAAAAAAEAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Interfaces\IObjectCollection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Amos.Controls.Sequence.PropertyEventHandle" Collapsed="true">
+    <Position X="42.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Sequence\SequenceControl.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Amos.Controls.Sequence.SelectEventHandle" Collapsed="true">
+    <Position X="44.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Sequence\SequenceControl.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Amos.Interfaces.OnSetObject" Collapsed="true">
+    <Position X="40.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IObjectCollection.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

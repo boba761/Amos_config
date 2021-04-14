@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigDashboard>
+  <GroupVariable name="Acquisition">
+    <Variable>Nucleus</Variable>
+    <Variable>Acq. Points</Variable>
+    <Variable>Points 1D</Variable>
+    <Variable>Points 2D</Variable>
+    <Variable>Points 3D</Variable>
+    <Variable>Points 4D</Variable>
+    <Variable>SW +/-</Variable>
+    <Variable>Filter</Variable>
+    <Variable>Dwell Time</Variable>
+    <Variable>Acq. Time</Variable>
+    <Variable>Scans 1D</Variable>
+    <Variable>Actual Scans 1D</Variable>
+    <Variable>Dummy Scans</Variable>
+    <Variable>Scan Start 1D</Variable>
+    <Variable>Last Delay</Variable>
+    <Variable>Repeat Times</Variable>
+    <Variable>SW 2D</Variable>
+    <Variable>Dwell 2D</Variable>
+    <Variable>Actual Points 2D</Variable>
+    <Variable>Points Start 2D</Variable>
+    <Variable>SW 3D</Variable>
+    <Variable>Dwell 3D</Variable>
+    <Variable>Actual Points 3D</Variable>
+    <Variable>Points Start 3D</Variable>
+    <Variable>SW 4D</Variable>
+    <Variable>Dwell 4D</Variable>
+    <Variable>Actual Points 4D</Variable>
+    <Variable>Points Start 4D</Variable>
+  </GroupVariable>
+  <GroupVariable name="Frequency">
+    <Variable>Observe Freq.</Variable>
+    <Variable>Observe Ch.</Variable>
+    <Variable>F1 Freq.</Variable>
+    <Variable>F1 Base Freq.</Variable>
+    <Variable>F1 Offset Freq.</Variable>
+    <Variable>F2 Freq.</Variable>
+    <Variable>F2 Base Freq.</Variable>
+    <Variable>F2 Offset Freq.</Variable>
+    <Variable>F3 Freq.</Variable>
+    <Variable>F3 Base Freq.</Variable>
+    <Variable>F3 Offset Freq.</Variable>
+    <Variable>F4 Freq.</Variable>
+    <Variable>F4 Base Freq.</Variable>
+    <Variable>F4 Offset Freq.</Variable>
+  </GroupVariable>
+  <GroupVariable name="Hardware">
+    <Variable>Trans. Gain</Variable>
+    <Variable>Receiver Gain</Variable>
+    <Variable>Receiver Phase</Variable>
+    <Variable>Dec. Attn.</Variable>
+    <Variable>Dec. BW</Variable>
+    <Variable>Set Temp.</Variable>
+    <Variable>Actual Temp.</Variable>
+    <Variable>Lock Solvent</Variable>
+    <Variable>Lock Field</Variable>
+    <Variable>Lock Power</Variable>
+    <Variable>Lock Gain</Variable>
+    <Variable>Lock Phase</Variable>
+    <Variable>Lock ppm</Variable>
+    <Variable>Shim Units</Variable>
+    <Variable>Grd. Orientation</Variable>
+    <Variable>Grd. Theta</Variable>
+    <Variable>Grd. Phi</Variable>
+  </GroupVariable>
+  <GroupVariable name="Multi Rec.">
+    <GroupVariable name="Channel 1">
+      <Variable>Rec. Gain Ch1</Variable>
+      <Variable>Obs. Freq. Rec1</Variable>
+      <Variable>Obs. Ch. Rec1</Variable>
+      <Variable>Rec. Phase Ch1</Variable>
+      <Variable>Points 1D Rec1</Variable>
+      <Variable>Acq. Points Rec1</Variable>
+      <Variable>SW +/- Rec1</Variable>
+      <Variable>Filter Rec1</Variable>
+      <Variable>Dwell Time Rec1</Variable>
+      <Variable>Acq. Time Rec1</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 2">
+      <Variable>Rec. Gain Ch2</Variable>
+      <Variable>Obs. Freq. Rec2</Variable>
+      <Variable>Obs. Ch. Rec2</Variable>
+      <Variable>Rec. Phase Ch2</Variable>
+      <Variable>Points 1D Rec2</Variable>
+      <Variable>Acq. Points Rec2</Variable>
+      <Variable>SW +/- Rec2</Variable>
+      <Variable>Filter Rec2</Variable>
+      <Variable>Dwell Time Rec2</Variable>
+      <Variable>Acq. Time Rec2</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 3">
+      <Variable>Rec. Gain Ch3</Variable>
+      <Variable>Obs. Freq. Rec3</Variable>
+      <Variable>Obs. Ch. Rec3</Variable>
+      <Variable>Rec. Phase Ch3</Variable>
+      <Variable>Points 1D Rec3</Variable>
+      <Variable>Acq. Points Rec3</Variable>
+      <Variable>SW +/- Rec3</Variable>
+      <Variable>Filter Rec3</Variable>
+      <Variable>Dwell Time Rec3</Variable>
+      <Variable>Acq. Time Rec3</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 4">
+      <Variable>Rec. Gain Ch4</Variable>
+      <Variable>Obs. Freq. Rec4</Variable>
+      <Variable>Obs. Ch. Rec4</Variable>
+      <Variable>Rec. Phase Ch4</Variable>
+      <Variable>Points 1D Rec4</Variable>
+      <Variable>Acq. Points Rec4</Variable>
+      <Variable>SW +/- Rec4</Variable>
+      <Variable>Filter Rec4</Variable>
+      <Variable>Dwell Time Rec4</Variable>
+      <Variable>Acq. Time Rec4</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 5">
+      <Variable>Rec. Gain Ch5</Variable>
+      <Variable>Obs. Freq. Rec5</Variable>
+      <Variable>Obs. Ch. Rec5</Variable>
+      <Variable>Rec. Phase Ch5</Variable>
+      <Variable>Points 1D Rec5</Variable>
+      <Variable>Acq. Points Rec5</Variable>
+      <Variable>SW +/- Rec5</Variable>
+      <Variable>Filter Rec5</Variable>
+      <Variable>Dwell Time Rec5</Variable>
+      <Variable>Acq. Time Rec5</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 6">
+      <Variable>Rec. Gain Ch6</Variable>
+      <Variable>Obs. Freq. Rec6</Variable>
+      <Variable>Obs. Ch. Rec6</Variable>
+      <Variable>Rec. Phase Ch6</Variable>
+      <Variable>Points 1D Rec6</Variable>
+      <Variable>Acq. Points Rec6</Variable>
+      <Variable>SW +/- Rec6</Variable>
+      <Variable>Filter Rec6</Variable>
+      <Variable>Dwell Time Rec6</Variable>
+      <Variable>Acq. Time Rec6</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 7">
+      <Variable>Rec. Gain Ch7</Variable>
+      <Variable>Obs. Freq. Rec7</Variable>
+      <Variable>Obs. Ch. Rec7</Variable>
+      <Variable>Rec. Phase Ch7</Variable>
+      <Variable>Points 1D Rec7</Variable>
+      <Variable>Acq. Points Rec7</Variable>
+      <Variable>SW +/- Rec7</Variable>
+      <Variable>Filter Rec7</Variable>
+      <Variable>Dwell Time Rec7</Variable>
+      <Variable>Acq. Time Rec7</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 8">
+      <Variable>Rec. Gain Ch8</Variable>
+      <Variable>Obs. Freq. Rec8</Variable>
+      <Variable>Obs. Ch. Rec8</Variable>
+      <Variable>Rec. Phase Ch8</Variable>
+      <Variable>Points 1D Rec8</Variable>
+      <Variable>Acq. Points Rec8</Variable>
+      <Variable>SW +/- Rec8</Variable>
+      <Variable>Filter Rec8</Variable>
+      <Variable>Dwell Time Rec8</Variable>
+      <Variable>Acq. Time Rec8</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 9">
+      <Variable>Rec. Gain Ch9</Variable>
+      <Variable>Obs. Freq. Rec9</Variable>
+      <Variable>Obs. Ch. Rec9</Variable>
+      <Variable>Rec. Phase Ch9</Variable>
+      <Variable>Points 1D Rec9</Variable>
+      <Variable>Acq. Points Rec9</Variable>
+      <Variable>SW +/- Rec9</Variable>
+      <Variable>Filter Rec9</Variable>
+      <Variable>Dwell Time Rec9</Variable>
+      <Variable>Acq. Time Rec9</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 10">
+      <Variable>Rec. Gain Ch10</Variable>
+      <Variable>Obs. Freq. Rec10</Variable>
+      <Variable>Obs. Ch. Rec10</Variable>
+      <Variable>Rec. Phase Ch10</Variable>
+      <Variable>Points 1D Rec10</Variable>
+      <Variable>Acq. Points Rec10</Variable>
+      <Variable>SW +/- Rec10</Variable>
+      <Variable>Filter Rec10</Variable>
+      <Variable>Dwell Time Rec10</Variable>
+      <Variable>Acq. Time Rec10</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 11">
+      <Variable>Rec. Gain Ch11</Variable>
+      <Variable>Obs. Freq. Rec11</Variable>
+      <Variable>Obs. Ch. Rec11</Variable>
+      <Variable>Rec. Phase Ch11</Variable>
+      <Variable>Points 1D Rec11</Variable>
+      <Variable>Acq. Points Rec11</Variable>
+      <Variable>SW +/- Rec11</Variable>
+      <Variable>Filter Rec11</Variable>
+      <Variable>Dwell Time Rec11</Variable>
+      <Variable>Acq. Time Rec11</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 12">
+      <Variable>Rec. Gain Ch12</Variable>
+      <Variable>Obs. Freq. Rec12</Variable>
+      <Variable>Obs. Ch. Rec12</Variable>
+      <Variable>Rec. Phase Ch12</Variable>
+      <Variable>Points 1D Rec12</Variable>
+      <Variable>Acq. Points Rec12</Variable>
+      <Variable>SW +/- Rec12</Variable>
+      <Variable>Filter Rec12</Variable>
+      <Variable>Dwell Time Rec12</Variable>
+      <Variable>Acq. Time Rec12</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 13">
+      <Variable>Rec. Gain Ch13</Variable>
+      <Variable>Obs. Freq. Rec13</Variable>
+      <Variable>Obs. Ch. Rec13</Variable>
+      <Variable>Rec. Phase Ch13</Variable>
+      <Variable>Points 1D Rec13</Variable>
+      <Variable>Acq. Points Rec13</Variable>
+      <Variable>SW +/- Rec13</Variable>
+      <Variable>Filter Rec13</Variable>
+      <Variable>Dwell Time Rec13</Variable>
+      <Variable>Acq. Time Rec13</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 14">
+      <Variable>Rec. Gain Ch14</Variable>
+      <Variable>Obs. Freq. Rec14</Variable>
+      <Variable>Obs. Ch. Rec14</Variable>
+      <Variable>Rec. Phase Ch14</Variable>
+      <Variable>Points 1D Rec14</Variable>
+      <Variable>Acq. Points Rec14</Variable>
+      <Variable>SW +/- Rec14</Variable>
+      <Variable>Filter Rec14</Variable>
+      <Variable>Dwell Time Rec14</Variable>
+      <Variable>Acq. Time Rec14</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 15">
+      <Variable>Rec. Gain Ch15</Variable>
+      <Variable>Obs. Freq. Rec15</Variable>
+      <Variable>Obs. Ch. Rec15</Variable>
+      <Variable>Rec. Phase Ch15</Variable>
+      <Variable>Points 1D Rec15</Variable>
+      <Variable>Acq. Points Rec15</Variable>
+      <Variable>SW +/- Rec15</Variable>
+      <Variable>Filter Rec15</Variable>
+      <Variable>Dwell Time Rec15</Variable>
+      <Variable>Acq. Time Rec15</Variable>
+    </GroupVariable>
+    <GroupVariable name="Channel 16">
+      <Variable>Rec. Gain Ch16</Variable>
+      <Variable>Obs. Freq. Rec16</Variable>
+      <Variable>Obs. Ch. Rec16</Variable>
+      <Variable>Rec. Phase Ch16</Variable>
+      <Variable>Points 1D Rec16</Variable>
+      <Variable>Acq. Points Rec16</Variable>
+      <Variable>SW +/- Rec16</Variable>
+      <Variable>Filter Rec16</Variable>
+      <Variable>Dwell Time Rec16</Variable>
+      <Variable>Acq. Time Rec16</Variable>
+    </GroupVariable>
+  </GroupVariable>
+  <GroupVariable name="Processing" />
+  <GroupVariable name="Grad. Preemph.">
+    <Variable>DC.x</Variable>
+    <Variable>A0.x</Variable>
+    <Variable>A1.x</Variable>
+    <Variable>T1.x</Variable>
+    <Variable>A2.x</Variable>
+    <Variable>T2.x</Variable>
+    <Variable>A3.x</Variable>
+    <Variable>T3.x</Variable>
+    <Variable>A4.x</Variable>
+    <Variable>T4.x</Variable>
+    <Variable>A5.x</Variable>
+    <Variable>T5.x</Variable>
+    <Variable>DC.y</Variable>
+    <Variable>A0.y</Variable>
+    <Variable>A1.y</Variable>
+    <Variable>T1.y</Variable>
+    <Variable>A2.y</Variable>
+    <Variable>T2.y</Variable>
+    <Variable>A3.y</Variable>
+    <Variable>T3.y</Variable>
+    <Variable>A4.y</Variable>
+    <Variable>T4.y</Variable>
+    <Variable>A5.y</Variable>
+    <Variable>T5.y</Variable>
+    <Variable>DC.z</Variable>
+    <Variable>A0.z</Variable>
+    <Variable>A1.z</Variable>
+    <Variable>T1.z</Variable>
+    <Variable>A2.z</Variable>
+    <Variable>T2.z</Variable>
+    <Variable>A3.z</Variable>
+    <Variable>T3.z</Variable>
+    <Variable>A4.z</Variable>
+    <Variable>T4.z</Variable>
+    <Variable>A5.z</Variable>
+    <Variable>T5.z</Variable>
+  </GroupVariable>
+  <GroupVariable name="B0 Compensation">
+    <Variable>DC.bx</Variable>
+    <Variable>A0.bx</Variable>
+    <Variable>A1.bx</Variable>
+    <Variable>T1.bx</Variable>
+    <Variable>A2.bx</Variable>
+    <Variable>T2.bx</Variable>
+    <Variable>A3.bx</Variable>
+    <Variable>T3.bx</Variable>
+    <Variable>A4.bx</Variable>
+    <Variable>T4.bx</Variable>
+    <Variable>A5.bx</Variable>
+    <Variable>T5.bx</Variable>
+    <Variable>DC.by</Variable>
+    <Variable>A0.by</Variable>
+    <Variable>A1.by</Variable>
+    <Variable>T1.by</Variable>
+    <Variable>A2.by</Variable>
+    <Variable>T2.by</Variable>
+    <Variable>A3.by</Variable>
+    <Variable>T3.by</Variable>
+    <Variable>A4.by</Variable>
+    <Variable>T4.by</Variable>
+    <Variable>A5.by</Variable>
+    <Variable>T5.by</Variable>
+    <Variable>DC.bz</Variable>
+    <Variable>A0.bz</Variable>
+    <Variable>A1.bz</Variable>
+    <Variable>T1.bz</Variable>
+    <Variable>A2.bz</Variable>
+    <Variable>T2.bz</Variable>
+    <Variable>A3.bz</Variable>
+    <Variable>T3.bz</Variable>
+    <Variable>A4.bz</Variable>
+    <Variable>T4.bz</Variable>
+    <Variable>A5.bz</Variable>
+    <Variable>T5.bz</Variable>
+  </GroupVariable>
+  <GroupVariable name="Misc.">
+    <Variable>Date</Variable>
+    <Variable>File Name</Variable>
+    <Variable>Magnet Field</Variable>
+    <Variable>Obs. Ref. Freq.</Variable>
+    <Variable>Absolute Freq.</Variable>
+    <Variable>Exp. Start Time</Variable>
+    <Variable>Exp. Finish Time</Variable>
+    <Variable>Exp. Elapsed Time</Variable>
+    <Variable>Cycle period</Variable>
+  </GroupVariable>
+</ConfigDashboard>

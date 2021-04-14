@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{339029A3-C071-4E5F-88EC-C8B0BEC41FEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calculations</RootNamespace>
+    <AssemblyName>Calculations</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompiledException.cs" />
+    <Compile Include="CompiledItem.cs" />
+    <Compile Include="Compiler.cs" />
+    <Compile Include="Expressions\BinaryExpresssion.cs" />
+    <Compile Include="Expressions\Expression.cs" />
+    <Compile Include="Expressions\FunctionExpression.cs" />
+    <Compile Include="Expressions\TrenaryExpression.cs" />
+    <Compile Include="Expressions\UnaryExpression.cs" />
+    <Compile Include="Expressions\ValueExpression.cs" />
+    <Compile Include="Expressions\VariableExpression.cs" />
+    <Compile Include="Operator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Values\AttenuationValue.cs" />
+    <Compile Include="Values\BooleanValue.cs" />
+    <Compile Include="Values\CornerValue.cs" />
+    <Compile Include="Values\DateTimeValue.cs" />
+    <Compile Include="Values\DoubleValue.cs" />
+    <Compile Include="Values\FrequencyValue.cs" />
+    <Compile Include="Values\IntegerValue.cs" />
+    <Compile Include="Values\StringValue.cs" />
+    <Compile Include="Values\TemperaturaValue.cs" />
+    <Compile Include="Values\TimeSpanValue.cs" />
+    <Compile Include="Values\TimeValue.cs" />
+    <Compile Include="Values\Value.cs" />
+    <Compile Include="Variables\CollectionVariable.cs" />
+    <Compile Include="Variables\GlobalVariable.cs" />
+    <Compile Include="Variables\LocalVariable.cs" />
+    <Compile Include="Variables\SequenceVariable.cs" />
+    <Compile Include="Variables\SystemVariable.cs" />
+    <Compile Include="Variables\TableVariable.cs" />
+    <Compile Include="Variables\Variable.cs" />
+    <Compile Include="Variables\VariableBase.cs" />
+    <Compile Include="Visitors\ExpressionVisitor.cs" />
+    <Compile Include="Visitors\Visitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Src\Tools\Tools.csproj">
+      <Project>{F74A2E73-36CC-403A-8E32-148FFE679FE5}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Localize\Localize.csproj">
+      <Project>{AD978D05-F938-4C16-B020-5E315E1DC4FE}</Project>
+      <Name>Localize</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

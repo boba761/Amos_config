@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="[Acq. Points].Description" xml:space="preserve">
+    <value>It is the number of complex data points actually sampled</value>
+  </data>
+  <data name="[Acq. Time].Description" xml:space="preserve">
+    <value>Display the time for the 1D aqcuisition</value>
+  </data>
+  <data name="[Actual Points 2D].Description" xml:space="preserve">
+    <value>It is the number of complex data points  2-th dimension actually sampled</value>
+  </data>
+  <data name="[Actual Points 3D].Description" xml:space="preserve">
+    <value>It is the number of complex data points  3-th dimension actually sampled</value>
+  </data>
+  <data name="[Actual Points 4D].Description" xml:space="preserve">
+    <value>It is the number of complex data points  4-th dimension actually sampled</value>
+  </data>
+  <data name="[Actual Scans 1D].Description" xml:space="preserve">
+    <value>The actual number of scans of the first dimension performed</value>
+  </data>
+  <data name="[Actual Temp.].Description" xml:space="preserve">
+    <value>The actual volume temperature</value>
+  </data>
+  <data name="[Dec. Attn.].Description" xml:space="preserve">
+    <value>De-coupler attenuation for the de-coupler power. This is another transmitting channel used for seperating nucleons</value>
+  </data>
+  <data name="[Dec. BW].Description" xml:space="preserve">
+    <value>De-coupler band-width</value>
+  </data>
+  <data name="[Dummy Scans].Description" xml:space="preserve">
+    <value>How many time to scan the first dimension without acquiring a signal</value>
+  </data>
+  <data name="[Dwell Time].Description" xml:space="preserve">
+    <value>Time per complex point in seconds</value>
+  </data>
+  <data name="[Dwell_2D].Description" xml:space="preserve">
+    <value>Time per complex point 2-th dimension in seconds</value>
+  </data>
+  <data name="[Dwell_3D].Description" xml:space="preserve">
+    <value>Time per complex point 3-th dimension in seconds</value>
+  </data>
+  <data name="[Dwell_4D].Description" xml:space="preserve">
+    <value>Time per complex point 4-th dimension in seconds</value>
+  </data>
+  <data name="[F1 Base Freq.].Description" xml:space="preserve">
+    <value>The base transmitting frequency in MHz for the 1-th channel</value>
+  </data>
+  <data name="[F1 Freq.].Description" xml:space="preserve">
+    <value>The transmitting frequency in MHz for the 1-th channel</value>
+  </data>
+  <data name="[F1 Offset Freq.].Description" xml:space="preserve">
+    <value>Added frequency in Khz for the 1-th channel</value>
+  </data>
+  <data name="[F2 Base Freq.].Description" xml:space="preserve">
+    <value>The base transmitting frequency in MHz for the 2-th channel</value>
+  </data>
+  <data name="[F2 Freq.].Description" xml:space="preserve">
+    <value>The transmitting frequency in MHz for the 2-th channel</value>
+  </data>
+  <data name="[F2 Offset Freq.].Description" xml:space="preserve">
+    <value>Added frequency in Khz for the 2-th channel</value>
+  </data>
+  <data name="[F3 Base Freq.].Description" xml:space="preserve">
+    <value>The base  transmitting frequency in MHz for the 3-th channel</value>
+  </data>
+  <data name="[F3 Freq.].Description" xml:space="preserve">
+    <value>The transmitting frequency in MHz for the 3-th channel</value>
+  </data>
+  <data name="[F3 Offset Freq.].Description" xml:space="preserve">
+    <value>Added frequency in Khz for the 3-th channel</value>
+  </data>
+  <data name="[F4 Base Freq.].Description" xml:space="preserve">
+    <value>The base transmitting frequency in MHz for the 4-th channel</value>
+  </data>
+  <data name="[F4 Freq.].Description" xml:space="preserve">
+    <value>The transmitting frequency in MHz for the 4-th channel</value>
+  </data>
+  <data name="[F4 Offset Freq.].Description" xml:space="preserve">
+    <value>Added frequency in Khz for the 4-th channel</value>
+  </data>
+  <data name="[Filter].Description" xml:space="preserve">
+    <value>Audio filter settings</value>
+  </data>
+  <data name="[Last Delay].Description" xml:space="preserve">
+    <value>The delay of the last event in a pulse. Used to set the delay between scans</value>
+  </data>
+  <data name="[Observe Ch.].Description" xml:space="preserve">
+    <value>Assign which transmitter channel is assign to 'observe'</value>
+  </data>
+  <data name="[Observe Freq.].Description" xml:space="preserve">
+    <value>Observe frequency in MHz. The TX frequency</value>
+  </data>
+  <data name="[Points 1D].Description" xml:space="preserve">
+    <value>Number of complex data points in the 1-th dimension</value>
+  </data>
+  <data name="[Points 2D].Description" xml:space="preserve">
+    <value>Number of complex data points in the 2-th dimension</value>
+  </data>
+  <data name="[Points 3D].Description" xml:space="preserve">
+    <value>Number of complex data points in the 3-th dimension</value>
+  </data>
+  <data name="[Points 4D].Description" xml:space="preserve">
+    <value>Number of complex data points in the 4-th dimension</value>
+  </data>
+  <data name="[Points Start 2D].Description" xml:space="preserve">
+    <value>Setting the starting scan number. In the 2-th dimension this states which row to start acquiring from</value>
+  </data>
+  <data name="[Points Start 3D].Description" xml:space="preserve">
+    <value>Setting the starting scan number. In the 3-th dimension this states which row to start acquiring from</value>
+  </data>
+  <data name="[Points Start 4D].Description" xml:space="preserve">
+    <value>Setting the starting scan number. In the 4-th dimension this states which row to start acquiring from</value>
+  </data>
+  <data name="[Rec. Gain Ch1].Description" xml:space="preserve">
+    <value>Channel 1 receiver gain</value>
+  </data>
+  <data name="[Rec. Gain Ch2].Description" xml:space="preserve">
+    <value>Channel 2 receiver gain</value>
+  </data>
+  <data name="[Receiver Gain].Description" xml:space="preserve">
+    <value>This is the gain of the receiver in systems that doesn't support multiple recorders, otherwise it is the same as Rec. Gain Ch1</value>
+  </data>
+  <data name="[Receiver Phase].Description" xml:space="preserve">
+    <value>This is the phase of the receiver in systems that doesn't support multiple recorders, otherwise it is the same as Rec. Gain Ch1</value>
+  </data>
+  <data name="[Repeat Times].Description" xml:space="preserve">
+    <value>The number of times to repeat the entire experiment</value>
+  </data>
+  <data name="[Scan Start 1D].Description" xml:space="preserve">
+    <value>Setting the starting scan number. In the first dimension this states which row to start acquiring from</value>
+  </data>
+  <data name="[Scans 1D].Description" xml:space="preserve">
+    <value>Setting the starting scan number. In the first dimension this states which row to start acquiring from</value>
+  </data>
+  <data name="[Set Temp.].Description" xml:space="preserve">
+    <value>Set the volume temperature</value>
+  </data>
+  <data name="[Shim Units].Description" xml:space="preserve">
+    <value>The sum of the magnitude calculations for all points, used as a shimming rating</value>
+  </data>
+  <data name="[SW +/-].Description" xml:space="preserve">
+    <value>Spectral width in Hz</value>
+  </data>
+  <data name="[SW 2D].Description" xml:space="preserve">
+    <value>Spectral width 2-th dimension in Hz</value>
+  </data>
+  <data name="[SW 3D].Description" xml:space="preserve">
+    <value>Spectral width 3-th dimension in Hz</value>
+  </data>
+  <data name="[SW 4D].Description" xml:space="preserve">
+    <value>Spectral width 4-th dimension in Hz</value>
+  </data>
+  <data name="[Trans. Gain].Description" xml:space="preserve">
+    <value>The transmitter's Gain</value>
+  </data>
+  <data name="AcqustionProperties.Window" xml:space="preserve">
+    <value>Acqustion properties</value>
+  </data>
+  <data name="Cancel.PushButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChooseSetupFile" xml:space="preserve">
+    <value>Choose Setup File…</value>
+  </data>
+  <data name="Close.MenuItem" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Copy.MenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CurrentNewDashboard.Text" xml:space="preserve">
+    <value>Current/New Dashboard</value>
+  </data>
+  <data name="Cut.MenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Dashboard.Alphabetical.ToolTip" xml:space="preserve">
+    <value>Alphabetical</value>
+  </data>
+  <data name="Dashboard.Categorized.ToolTip" xml:space="preserve">
+    <value>Categorized</value>
+  </data>
+  <data name="Dashboard.Customize.ToolTip" xml:space="preserve">
+    <value>Show dialog "Dashboard Customize"</value>
+  </data>
+  <data name="Dashboard.Filter" xml:space="preserve">
+    <value>Dashboard files</value>
+  </data>
+  <data name="Dashboard.FormulaMode.ToolTip" xml:space="preserve">
+    <value>Toggle Dashboard Formula mode</value>
+  </data>
+  <data name="Dashboard.MenuItem" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Dashboard.ValueMode.ToolTip" xml:space="preserve">
+    <value>Toggle Dashboard Value mode</value>
+  </data>
+  <data name="Dashboard.VariableEditor.ToolTip" xml:space="preserve">
+    <value>Show dialog "Variable Editor"</value>
+  </data>
+  <data name="Dashboard.Window" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="DashboardCustomize.MenuItem" xml:space="preserve">
+    <value>Dashboard Customize</value>
+  </data>
+  <data name="DashboardCustomize.Window" xml:space="preserve">
+    <value>Dashboard Customize</value>
+  </data>
+  <data name="Edit.MenuPopup" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Edit.ToolTip" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EventNumber" xml:space="preserve">
+    <value>Event Number:</value>
+  </data>
+  <data name="Exit.MenuItem" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Exit.ToolTip" xml:space="preserve">
+    <value>Exit </value>
+  </data>
+  <data name="File.MenuPopup" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Global.PageTab" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="Help.MenuPopup" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Local.PageTab" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="MasterDashboard.Text" xml:space="preserve">
+    <value>Master Dashboard</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="New.MenuItem" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Ok.PushButton" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Open.MenuItem" xml:space="preserve">
+    <value>Open…</value>
+  </data>
+  <data name="Open.PushButton" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="OpenDashboard.Title" xml:space="preserve">
+    <value>Open Dashboard file</value>
+  </data>
+  <data name="OpenDashboardFile.Text" xml:space="preserve">
+    <value>Open Dashboard file</value>
+  </data>
+  <data name="Paste.MenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Redo.MenuItem" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="Save.MenuItem" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Save.PushButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveAs.MenuItem" xml:space="preserve">
+    <value>Save As…</value>
+  </data>
+  <data name="SaveDashboard.Title" xml:space="preserve">
+    <value>Save Dashboard As…</value>
+  </data>
+  <data name="Sequence.MenuItem" xml:space="preserve">
+    <value>Sequence</value>
+  </data>
+  <data name="Sequence.PageTab" xml:space="preserve">
+    <value>Sequence</value>
+  </data>
+  <data name="ShowFormulas.CheckButton" xml:space="preserve">
+    <value>Show Formulas</value>
+  </data>
+  <data name="Table.PageTab" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="Undo.MenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="VariableEditor.MenuItem" xml:space="preserve">
+    <value>Variable Editor</value>
+  </data>
+  <data name="VariableEditor.Window" xml:space="preserve">
+    <value>Variable Editor</value>
+  </data>
+  <data name="View.MenuPopup" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Window.MenuPopup" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="Erorr.NotCorrectFileExtensionMRI" xml:space="preserve">
+    <value>Not the correct file extension, the file must have the extension MRI.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="image.Acquisition.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Acquisition.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.AddDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\AddDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Asynchronous.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Asynchronous.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.AsynchronousStart.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\AsynchronousStart.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.AsynchronousStop.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\AsynchronousStop.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Cancel.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Cancel.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.ClearCell.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\ClearCell.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Close.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Close.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Continue.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Continue.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Copy.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Copy.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.CustomizeDashboard.Group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\CustomizeDashboard.Group.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.CustomizeDashboard.Variable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\CustomizeDashboard.Variable.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Cut.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Cut.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.Alphabetical.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.Alphabetical.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.Categorized.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.Categorized.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.Customize.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.Customize.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.FormulaMode.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.FormulaMode.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.FormulaMode.MenuItem16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.FormulaMode.MenuItem16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.ValueMode.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.ValueMode.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.ValueMode.MenuItem16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.ValueMode.MenuItem16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Dashboard.VariableEditor.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Dashboard.VariableEditor.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.DeleteDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\DeleteDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Delimeter.Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Delimeter.Button.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.DownDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\DownDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.EditCell.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\EditCell.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.EditDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\EditDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Exit.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Exit.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Imaginary.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Imaginary.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.InsertDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\InsertDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.LoopEnd.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\LoopEnd.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.LoopStart.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\LoopStart.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.MinusX.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\MinusX.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.MinusY.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\MinusY.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.MoveDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\MoveDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.New.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\New.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Ok.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Ok.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Open.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Open.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Open.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Open.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Paste.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Paste.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.PlusX.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\PlusX.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.PlusY.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\PlusY.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Property.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Property.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Real.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Real.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Redo.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Redo.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Save.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Save.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Save.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Save.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.SaveAs.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\SaveAs.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Signal.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Signal.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Table1D.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Table1D.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Table1D2D.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Table1D2D.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Table2D.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Table2D.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Table3D.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Table3D.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Table4D.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Table4D.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.TableShape.Sequence.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\TableShape.Sequence.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.Undo.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\Undo.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.UpDashboard.PushButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\UpDashboard.PushButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.ZoomIn.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\ZoomIn.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image.ZoomOut.MenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\ZoomOut.MenuItem.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cur.MoveRow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\MoveRow.cur;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cur.SelectColumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\SelectColumn.cur;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cur.SelectRow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>e:\Work\Amos\trunk\Resource\Images\SelectRow.cur;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

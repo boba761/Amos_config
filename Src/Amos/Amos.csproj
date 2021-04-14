@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{140E9FEF-5191-4B95-8C83-E223AD68F4EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Amos</RootNamespace>
+    <AssemblyName>Amos</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>Amos.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>E:\Work\NMR\trunk\Deploy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/NMR/</UpdateUrl>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Execute\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>nmr.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>14934356E5CF2B9AEED104BC37E1B1AF8EB1CF8B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NMR_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\ClearColumnCommand.cs" />
+    <Compile Include="Commands\ClearObjectCommand.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\InsertColumnCommand.cs" />
+    <Compile Include="Commands\MoveRowCommand.cs" />
+    <Compile Include="Commands\RemoveColumnCommand.cs" />
+    <Compile Include="Commands\RenameElementCommand.cs" />
+    <Compile Include="Commands\ResizeColumnCommand.cs" />
+    <Compile Include="Controls\DelayTableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DelayTableControl.Designer.cs">
+      <DependentUpon>DelayTableControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GradientAmplitudeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GradientAmplitudeControl.Designer.cs">
+      <DependentUpon>GradientAmplitudeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Signal\LargeSignalPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Signal\SignalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Signal\SignalControl.Designer.cs">
+      <DependentUpon>SignalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Signal\SmallSignalPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\VariableConvertor.cs" />
+    <Compile Include="Controls\VariablePropertyDescriptor.cs" />
+    <Compile Include="Data\GlobalData.cs" />
+    <Compile Include="Data\Sequence\Tables\AcquisitionObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Sequence\Tables\AcquisitionTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\AsynchronusObject.cs" />
+    <Compile Include="Data\Sequence\Tables\AttenuationTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\DataTables\DataTable.cs" />
+    <Compile Include="Data\Sequence\Tables\DataTables\GenerateAutoTable.cs" />
+    <Compile Include="Data\Sequence\Tables\DataTables\DelayAutoTable.cs" />
+    <Compile Include="Data\Sequence\Tables\DelayTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\FrequencyTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\GradientAmplitudeTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\GradientWaveformTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\LoopTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\ModulationTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\PhaseTableSequence.cs" />
+    <Compile Include="Data\Sequence\Tables\RotationAngleTableSequence.cs" />
+    <Compile Include="Forms\VariableEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VariableEditorForm.Designer.cs">
+      <DependentUpon>VariableEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\Receiver.cs" />
+    <Compile Include="Commands\SetObjectCommand.cs" />
+    <Compile Include="Controls\Sequence\SequencePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Sequence\Cell.cs" />
+    <Compile Include="Controls\Sequence\SequenceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Sequence\SequenceControl.Designer.cs">
+      <DependentUpon>SequenceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Sequence\Glyph.cs" />
+    <Compile Include="Controls\VariableTypeEditor.cs" />
+    <Compile Include="Controls\Sequence\Header.cs" />
+    <Compile Include="Data\Sequence\Objects\AT_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\ACQ_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\Delay_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\ET_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\GR_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\GA_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\LD_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\Loop_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\Name_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\O1_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\ObjectCollection.cs" />
+    <Compile Include="Data\Sequence\Objects\PH_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\PS_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\RM_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\SH_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\Objects\TX_ObjectSequence.cs" />
+    <Compile Include="Data\Sequence\TableSequence.cs" />
+    <Compile Include="Interfaces\ISignalPaint.cs" />
+    <Compile Include="Interfaces\sStreamData.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecentFileList.cs" />
+    <Compile Include="TypeFiles\FileBuilders\DashboardFileBuilder.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\SequenceAcquation.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\SequenceParameterPages.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\SequenceParameters.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\SequenceTable.cs" />
+    <Compile Include="TypeFiles\FileBuilders\GlobalVariableFileBuilder.cs" />
+    <Compile Include="TypeFiles\FileBuilders\MRIFileBuilder.cs" />
+    <Compile Include="TypeFiles\FileBuilders\SequenceFileBuilder.cs" />
+    <Compile Include="TypeFiles\FileBuilders\SignalFileBuilder.cs" />
+    <Compile Include="Controls\Sequence\Column.cs" />
+    <Compile Include="Data\DashboardData.cs" />
+    <Compile Include="Controls\Sequence\Row.cs" />
+    <Compile Include="Data\SequenceData.cs" />
+    <Compile Include="Data\SignalData.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="Data\Sequence\StreamSequence.cs" />
+    <Compile Include="Forms\AcquisitionPropertieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcquisitionPropertieForm.Designer.cs">
+      <DependentUpon>AcquisitionPropertieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardCustomizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardCustomizeForm.Designer.cs">
+      <DependentUpon>DashboardCustomizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TableEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TableEditForm.Designer.cs">
+      <DependentUpon>TableEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\Menu.PNG" />
+    <EmbeddedResource Include="Controls\DelayTableControl.resx">
+      <DependentUpon>DelayTableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GradientAmplitudeControl.resx">
+      <DependentUpon>GradientAmplitudeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Sequence\SequencePanel.resx">
+      <DependentUpon>SequencePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Sequence\SequenceControl.resx">
+      <DependentUpon>SequenceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Signal\SignalControl.resx">
+      <DependentUpon>SignalControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AcquisitionPropertieForm.resx">
+      <DependentUpon>AcquisitionPropertieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardCustomizeForm.resx">
+      <DependentUpon>DashboardCustomizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TableEditForm.resx">
+      <DependentUpon>TableEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VariableEditorForm.resx">
+      <DependentUpon>VariableEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\BaseView.resx">
+      <DependentUpon>BaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DashboardView.resx">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SequenceView.resx">
+      <DependentUpon>SequenceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SignalView.resx">
+      <DependentUpon>SignalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Compile Include="TypeFiles\FileBuilder.cs" />
+    <Compile Include="TypeFiles\FileConverter.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\BinaryReaderEx.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\GridAndAxis.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\PulseSequence.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\SequenceEvent.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\SequenceRow.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\TECMAG.cs" />
+    <Compile Include="TypeFiles\FileBuilders\FileTNT\TECMAG2.cs" />
+    <Compile Include="TypeFiles\FileBuilders\ParametersFileBuilder.cs" />
+    <Compile Include="TypeFiles\FileBuilders\ConfigDashboardFileBuilder.cs" />
+    <Compile Include="TypeFiles\FileBuilders\TNTFileBuilder.cs" />
+    <Compile Include="Views\BaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardView.designer.cs">
+      <DependentUpon>DashboardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SequenceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SequenceView.designer.cs">
+      <DependentUpon>SequenceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SignalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SignalView.Designer.cs">
+      <DependentUpon>SignalView.cs</DependentUpon>
+    </Compile>
+    <Content Include="Config\config.con">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dashboards\Master.dashboard">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\DataSources\NMR.Data.Variables.GlobalVariable.datasource" />
+    <None Include="Properties\DataSources\NMR.Data.Variables.ObjectVariable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculations\Calculations.csproj">
+      <Project>{339029A3-C071-4E5F-88EC-C8B0BEC41FEA}</Project>
+      <Name>Calculations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Localize\Localize.csproj">
+      <Project>{AD978D05-F938-4C16-B020-5E315E1DC4FE}</Project>
+      <Name>Localize</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{F74A2E73-36CC-403A-8E32-148FFE679FE5}</Project>
+      <Name>Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormsUI\WinFormsUI.csproj">
+      <Project>{C75532C4-765B-418E-B09B-46D36B2ABDB1}</Project>
+      <Name>WinFormsUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nmr.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
